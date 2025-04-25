@@ -6517,6 +6517,7 @@ export interface BaseMessageOptions {
     | AttachmentPayload
   )[];
   components?: readonly (
+    | JSONEncodable<APIActionRowComponent<APIComponentInActionRow>>
     | JSONEncodable<APIMessageTopLevelComponent>
     | TopLevelComponentData
     | ActionRowData<MessageActionRowComponentData | MessageActionRowComponentBuilder>
